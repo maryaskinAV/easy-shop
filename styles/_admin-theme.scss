@@ -1,0 +1,53 @@
+.admin-layout {
+  @apply min-h-screen flex relative;
+
+  .admin-sidebar {
+    @apply w-52 bg-amber-500 h-screen;
+    @apply dark:bg-blue-500;
+
+    .admin-sidebar__brand {
+      @apply h-16;
+    }
+
+    .admin-nav {
+      @apply flex flex-col;
+
+      .admin-links {
+        @apply flex flex-col;
+      }
+      .admin-link {
+
+        &-down {
+        }
+      }
+    }
+  }
+
+  .admin-content {
+    @apply flex flex-col w-full;
+
+    .admin-header {
+      @apply h-16 flex border-b bg-amber-500;
+      @apply dark:bg-blue-500;
+    }
+
+    .admin-container {
+      @apply flex-grow;
+    }
+
+    .admin-footer {
+      @apply h-20 border-t;
+    }
+  }
+
+  .switch-dark {
+    @apply absolute bottom-16 right-8;
+    @apply border-2 bg-amber-300 hover:bg-amber-600 p-4 rounded-2xl;
+    @apply dark:bg-blue-500 dark:hover:bg-sky-700;
+
+  }
+}
+
+.icon {
+  @apply h-5 w-5 inline-flex text-black;
+}

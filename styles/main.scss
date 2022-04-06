@@ -1,0 +1,22 @@
+// Base
+@import "tailwindcss/base";
+
+// Components
+@import "tailwindcss/components";
+@import "buttons/buttons";
+
+// Utilities
+@import "tailwindcss/utilities";
+
+// Custom screens
+@import "tailwindcss/screens";
+
+// Base body styles
+body {
+  @apply m-0 p-0 box-border h-screen;
+  @apply dark:bg-gray-700;
+}
+
+// Custom themes
+@import "base-theme";
+@import "admin-theme";

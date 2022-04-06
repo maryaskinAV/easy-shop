@@ -1,0 +1,12 @@
+.btn {
+  @apply rounded-xl px-4 cursor-pointer;
+
+  &-default {
+    @apply bg-blue-500 hover:bg-blue-600 text-cyan-100;
+    @apply dark:bg-blue-500 dark:hover:bg-blue-700;
+  }
+
+  &-secondary {
+    @apply bg-green-300 text-black border-2 border-green-600 #{!important};
+  }
+}
